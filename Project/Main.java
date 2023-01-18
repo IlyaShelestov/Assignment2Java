@@ -194,8 +194,8 @@ public class Main {
                             commandsEditWagon();
                             command = scan.nextInt();
                             if (command == 1) {
-                                if (train.get(indexOfWagon).getAmountOfPassengers() >= train.get(indexOfWagon).getMaxPassengers()) {
-                                    System.out.println("This wagon agon is full!");
+                                if (train.get(indexOfWagon).getAmountOfPassengers() == train.get(indexOfWagon).getMaxPassengers()) {
+                                    System.out.println("This wagon is full!");
                                     break;
                                 }
                                 addPassenger(train.get(indexOfWagon).getPassengers(), scan);
